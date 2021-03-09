@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abidh\\source\\repos\\SP21BCS\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\Acer\\source\\repos\\SP21BCS\\ConsoleAPP1\\ConsoleAPP1\\ConsoleAPP1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abidh\\source\\repos\\SP21BCS\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\Acer\\source\\repos\\SP21BCS\\ConsoleAPP1\\ConsoleAPP1\\ConsoleAPP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abidh\\source\\repos\\SP21BCS\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-        "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\abidh\\source\\repos\\SP21BCS\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-        "packagesPath": "C:\\Users\\abidh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abidh\\source\\repos\\SP21BCS\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\SP21BCS\\ConsoleAPP1\\ConsoleAPP1\\ConsoleAPP1.csproj",
+        "projectName": "ConsoleAPP1",
+        "projectPath": "C:\\Users\\Acer\\source\\repos\\SP21BCS\\ConsoleAPP1\\ConsoleAPP1\\ConsoleAPP1.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\source\\repos\\SP21BCS\\ConsoleAPP1\\ConsoleAPP1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abidh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
