@@ -1,0 +1,10 @@
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\bin\Debug\WindowsFormsAppclass.exe.config
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\bin\Debug\WindowsFormsAppclass.exe
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\bin\Debug\WindowsFormsAppclass.pdb
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\obj\Debug\WindowsFormsAppclass.csprojAssemblyReference.cache
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\obj\Debug\WindowsFormsAppclass.Form1.resources
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\obj\Debug\WindowsFormsAppclass.Properties.Resources.resources
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\obj\Debug\WindowsFormsAppclass.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\obj\Debug\WindowsFormsAppclass.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\obj\Debug\WindowsFormsAppclass.exe
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsAppclass\WindowsFormsAppclass\obj\Debug\WindowsFormsAppclass.pdb
