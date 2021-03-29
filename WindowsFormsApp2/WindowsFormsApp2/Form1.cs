@@ -17,6 +17,10 @@ namespace WindowsFormsApp2
         public int lengthOfTextWhileSaving;
         public int length;
         public string textBeforeSaving;
+        public bool isSave = false;
+        public string filePath;
+        public float fontSize = 12;
+        public string fontFamily = "Microsoft Sans Serif";
 
         //Save file Method/Function
         public void SaveFile()
@@ -30,10 +34,37 @@ namespace WindowsFormsApp2
             else
             {
                 File.WriteAllText(saveFileDialog1.FileName, textBox1.Text);
-                lengthOfTextWhileSaving = textBox1.Text.Length;
+
+                filePath = saveFileDialog1.FileName;
                 label1.Text = saveFileDialog1.FileName;
                 textBeforeSaving = textBox1.Text;
+                isSave = true;
             }
+        }
+
+        //Asterisk show method
+        public void Asterisk()
+        {
+            if (textBeforeSaving != textBox1.Text)
+            {
+                label1.Text = saveFileDialog1.FileName + "*";
+            }
+
+            if (textBeforeSaving == textBox1.Text)
+            {
+                label1.Text = saveFileDialog1.FileName;
+            }
+
+            if (textBox1.Text.Length == 0)
+            {
+                label1.Text = "";
+            }
+        }
+
+        //FontSizeShow method
+        public void FontSizeShow()
+        {
+            label3.Text = "Font size: " + fontSize;
         }
         
 
@@ -52,11 +83,18 @@ namespace WindowsFormsApp2
 
         //Save code
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            int counter = 0;
-            saveFileDialog1.FileName = "Untitled" + counter + "txt";
-            File.WriteAllText(saveFileDialog1.FileName, textBox1.Text);
-            counter++;
+        { 
+            if(isSave == false)
+            {
+                SaveFile();
+            }
+            if(isSave == true)
+            {
+                textBeforeSaving = textBox1.Text;
+                File.WriteAllText(filePath, textBox1.Text);
+                Asterisk();
+            }
+            
         }
 
 
@@ -99,20 +137,7 @@ namespace WindowsFormsApp2
         {
             label2.Text = textBox1.Text.Length.ToString() + " Letters";
 
-            if (textBeforeSaving != textBox1.Text)
-            {
-                label1.Text = saveFileDialog1.FileName + "*";
-            }
-
-            if (textBeforeSaving == textBox1.Text)
-            {
-                label1.Text = saveFileDialog1.FileName;
-            }
-
-            if(textBox1.Text.Length == 0)
-            {
-                label1.Text = "";
-            }
+            Asterisk();
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -125,7 +150,7 @@ namespace WindowsFormsApp2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            label3.Text = " Font Size: 12";
         }
 
  
@@ -158,5 +183,74 @@ namespace WindowsFormsApp2
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(textBeforeSaving);
+        }
+
+        private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontSize = 12;
+            textBox1.Font = new System.Drawing.Font(fontFamily, fontSize);
+            FontSizeShow();
+        }
+
+        private void zoomInToolStripMenuItem_Click(object sender, EventArgs e)
+        { 
+            textBox1.Font = new System.Drawing.Font(fontFamily, fontSize=fontSize+2);
+            FontSizeShow();
+        }
+
+        private void zoomOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Font = new System.Drawing.Font(fontFamily, fontSize = fontSize - 2);
+            FontSizeShow();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void abourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (textBox1.SelectedText != "")
+            {
+                textBox1.Cut();
+            }
+        }
+
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Paste();
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (textBox1.CanUndo == true)
+            
+                textBox1.Undo();
+                textBox1.ClearUndo();
+            }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (textBox1.SelectedText != "")
+            {
+                textBox1.Copy();
+            }
+        }
     }
-}
+    }
+
