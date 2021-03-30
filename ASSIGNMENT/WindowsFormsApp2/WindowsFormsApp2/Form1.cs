@@ -18,9 +18,12 @@ namespace WindowsFormsApp2
         public string textBeforeSaving;
         public bool isSaveFirstTime = false;
         public string filePath;
-        public float fontSize = 12;
+        public float fontSize = 8;
+        public string fontName;
+        public Enum fontStyle;
         public string fontFamily = "Microsoft Sans Serif";
         public bool isFileSave = false;
+
 
         public Form1()
         {
@@ -120,12 +123,12 @@ namespace WindowsFormsApp2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label3.Text = " Font Size: 12";
+            label3.Text = "Font size: 8 Font Family: " + fontFamily;
         }
 
         private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fontSize = 12;
+            fontSize = 8;
             textBox1.Font = new System.Drawing.Font(fontFamily, fontSize);
             FontSizeShow();
         }
@@ -264,7 +267,18 @@ namespace WindowsFormsApp2
         //FontSizeShow method
         public void FontSizeShow()
         {
-            label3.Text = "Font size: " + fontSize;
+            label3.Text = "Font size:" + fontSize + " Font Family: " + fontFamily;
+        }
+
+        private void zoomToolStripMenuItem_Click(object sender, EventArgs e) { }
+
+        private void showFontsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowDialog();
+                fontSize = fontDialog1.Font.Size;
+                fontName = fontDialog1.Font.Name;
+                textBox1.Font = new System.Drawing.Font(fontName, fontSize);
+                label3.Text = "Font size: " + fontSize + " Font Family: " + fontName;
         }
     }
 }

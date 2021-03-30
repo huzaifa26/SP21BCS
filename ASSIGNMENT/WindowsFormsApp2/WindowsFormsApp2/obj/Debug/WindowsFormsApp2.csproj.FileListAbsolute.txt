@@ -9,3 +9,14 @@ C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\W
 C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Acer\source\repos\SP21BCS\ASSIGNMENT\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
