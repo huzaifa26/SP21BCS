@@ -22,6 +22,15 @@ namespace WindowsFormsApp2
         public float fontSize = 12;
         public string fontFamily = "Microsoft Sans Serif";
 
+
+        //Open file method
+        public void OpenFile()
+        {
+            openFileDialog1.Filter = "Untitled| *.txt";
+            openFileDialog1.ShowDialog();
+            textBox1.Text = File.ReadAllText(openFileDialog1.FileName);
+        }
+
         //Save file Method/Function
         public void SaveFile()
         {
@@ -42,9 +51,12 @@ namespace WindowsFormsApp2
             }
         }
 
+
+
         //Asterisk show method
         public void Asterisk()
         {
+            label2.Text = textBox1.Text.Length.ToString() + " Letters";
             if (textBeforeSaving != textBox1.Text)
             {
                 label1.Text = saveFileDialog1.FileName + "*";
@@ -66,19 +78,16 @@ namespace WindowsFormsApp2
         {
             label3.Text = "Font size: " + fontSize;
         }
-        
 
         public Form1()
         {
             InitializeComponent();
         }
 
-
         //Save as method call.
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveFile();
-            
+            SaveFile(); 
         }
 
         //Save code
@@ -93,17 +102,13 @@ namespace WindowsFormsApp2
                 textBeforeSaving = textBox1.Text;
                 File.WriteAllText(filePath, textBox1.Text);
                 Asterisk();
-            }
-            
+            }   
         }
-
-
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
 
         //Open file code.
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -112,23 +117,20 @@ namespace WindowsFormsApp2
             {
                 if (label1.Text.Contains("*"))
                 {
-                    DialogResult result = MessageBox.Show("do you want to discard the changes?", "Unsaved Changes Alert", MessageBoxButtons.YesNo);
+                    DialogResult result = MessageBox.Show("Do you want to discard the changes and open File?", "Unsaved Changes Alert", MessageBoxButtons.YesNo);
                     if (result == DialogResult.No)
                     {
                         //do nothing
                     }
                     if (result == DialogResult.Yes)
                     {
-                        openFileDialog1.Filter = "tet fi| *.txt";
-                        openFileDialog1.ShowDialog();
-                        textBox1.Text = File.ReadAllText(openFileDialog1.FileName);
-                        //label1.Text = openFileDialog1.FileName;
+                        OpenFile();
                     }
                 }
             }
-            else
+            else if(textBox1.Text == "" && label1.Text.Contains(""))
             {
-
+                OpenFile();
             }
             }
 
@@ -136,7 +138,6 @@ namespace WindowsFormsApp2
         private void Textbox1_keyUp(object sender, KeyEventArgs e)
         {
             label2.Text = textBox1.Text.Length.ToString() + " Letters";
-
             Asterisk();
         }
 
@@ -144,9 +145,6 @@ namespace WindowsFormsApp2
         {
 
         }
-
-
-        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -157,7 +155,7 @@ namespace WindowsFormsApp2
         //Cross button event handler
         private void FC(object sender, FormClosedEventArgs e)
         {
-            if (textBox1.Text.Length > 0)
+            if (textBox1.Text.Length > 0 && label1.Text.Contains("*"))
             {
                 DialogResult result1 = MessageBox.Show("Document unsaved. Do you want to Save and close the document", "Unsaved Changes Alert", MessageBoxButtons.YesNo);
                 if (textBeforeSaving != textBox1.Text)
@@ -239,7 +237,6 @@ namespace WindowsFormsApp2
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (textBox1.CanUndo == true)
-            
                 textBox1.Undo();
                 textBox1.ClearUndo();
             }
@@ -250,6 +247,31 @@ namespace WindowsFormsApp2
             {
                 textBox1.Copy();
             }
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(label1.Text.Contains("*")) {
+                DialogResult newButtonResult = MessageBox.Show("Document unsaved. Do you want to Open new file", "Unsaved Changes Alert", MessageBoxButtons.YesNo);
+                if(newButtonResult == DialogResult.Yes)
+                {
+                    textBox1.Clear();
+                    Asterisk();
+                }
+                else
+                {
+                    MessageBox.Show("haha");
+                }
+            }
+
+            
+
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
         }
     }
     }

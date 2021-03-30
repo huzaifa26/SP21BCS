@@ -8,3 +8,4 @@ C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\W
 C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
 C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Acer\source\repos\SP21BCS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
