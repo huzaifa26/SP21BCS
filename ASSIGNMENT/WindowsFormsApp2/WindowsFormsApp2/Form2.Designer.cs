@@ -53,7 +53,7 @@ namespace WindowsFormsApp2
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 30);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Syed Huzifa Abid";
+            this.label1.Text = "Imad Ahmad";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -62,7 +62,7 @@ namespace WindowsFormsApp2
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 2;
-            this.label2.Text = "SP19-BCS-025";
+            this.label2.Text = "SP19-BCS-011";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
